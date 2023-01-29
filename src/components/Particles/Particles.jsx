@@ -1,6 +1,6 @@
 import React from 'react';
 import './particlejs.min.js'
-import '../particlesjs-config.json';
+import '../../particlesjs-config.json';
 
 const ParticlesBg = () => {
     return (
