@@ -1,8 +1,7 @@
-import React from 'react';
-import './particlejs.min.js'
-import '../../particlesjs-config.json';
+import './config.json';
+import './particles';
 
-const ParticlesBg = () => {
+const Particles = () => {
     return (
         <>
             <div id="particles-js" className="particles-js"></div>
@@ -10,4 +9,4 @@ const ParticlesBg = () => {
     );
 };
 
-export default ParticlesBg;
+export default Particles;
