@@ -83,6 +83,7 @@ nav{
     align-items: center;
     position: relative;
     z-index: 5;
+    font-weight: 600;
 }
 .menu div:hover .destello{
     animation: destello .7s 1 linear;
@@ -127,13 +128,13 @@ nav{
     top: 0;
     right: 0;
 }
-.img_container .one{
+.one{
     animation: slider 36s infinite 0s linear;
 }
-.img_container .two{
+.two{
     animation: slider 36s infinite 12s linear;
 }
-.img_container .three{
+.three{
     animation: slider 36s infinite 24s linear;
 }
 @keyframes slider {
@@ -174,9 +175,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.b_one, .b_three, .b_five{
-    align-self: flex-end;
+    filter: drop-shadow(0 0 20px var(--light))
 }
 .business_circle{
     width: 100px;
@@ -189,7 +188,24 @@ nav{
     position: relative;
     z-index: 5;
     transition: translate .5s ease-out;
-    animation: shadow 10s infinite linear;
+}
+.b_one, .b_three, .b_five{
+    align-self: flex-end;
+}
+.b_one{
+    animation: shadow 10s infinite 0s linear;
+}
+.b_two{
+    animation: shadow 10s infinite 2s linear;
+}
+.b_three{
+    animation: shadow 10s infinite 4s linear;
+}
+.b_four{
+    animation: shadow 10s infinite 6s linear;
+}
+.b_five{
+    animation: shadow 10s infinite 8s linear;
 }
 .business_circle div{
     background: linear-gradient(-45deg, rgb(7, 7, 7) 40%, rgb(252, 252, 254) 100%);
@@ -205,25 +221,25 @@ nav{
 }
 @keyframes shadow {
     0%{
-        box-shadow: 0 0 20px var(--light);
+        filter: drop-shadow(0 0 20px var(--light));
     }
     25%{
-        box-shadow: 0 0 20px var(--primary);
+        filter: drop-shadow(0 0 20px var(--primar));
     }
     40%{
-        box-shadow: 0 0 20px var(--light);
+        filter: drop-shadow(0 0 20px var(--light));
     }
     55%{
-        box-shadow: 0 0 20px var(--secondary);
+        filter: drop-shadow(0 0 20px var(--secondary));
     }
     70%{
-        box-shadow: 0 0 20px var(--light);
+        filter: drop-shadow(0 0 20px var(--light));
     }
     85%{
-        box-shadow: 0 0 20px var(--success);
+        filter: drop-shadow(0 0 20px var(--success));
     }
     100%{
-        box-shadow: 0 0 20px var(--light);
+        filter: drop-shadow(0 0 20px var(--light));
     } 
 }
 .business_rectangle{
