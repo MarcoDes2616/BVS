@@ -7,8 +7,12 @@ function App() {
 
     return (
         <div className="App">
-            <Navbar />
-            <Hero />
+            {/* este componente contiene todo lo que estará a primera vista*/}
+            <div className='header'>
+                <Navbar />
+                <Hero />
+            </div>
+
             <section className='hi'>
                 <h1>Hola soy una seccion</h1>
                 <p>
