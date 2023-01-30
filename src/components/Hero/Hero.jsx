@@ -5,14 +5,11 @@ import slider1 from "../../assets/img/slider1.png"
 import slider2 from "../../assets/img/slider2.png"
 import slider3 from "../../assets/img/slider3.png"
 import logo from "../../assets/img/logo_big.png"
-import { cardsData } from '../../data';
+import { cardsData, textToShow } from '../../data';
 import './hero.css'
 
 const Hero = () => {
-    const textToShow = [
-        'Somos la revolución de los servicios Tecnológicos',
-        'Mejore su rendimiento con nuestras asesorías personalizadas'
-    ]
+
 
     return (
         <div className='hero'>
