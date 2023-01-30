@@ -22,4 +22,9 @@ body {
     background-color: rgb(6, 6, 6);
 }
 
+section{
+    position: relative;
+    background-color: rgb(6, 6, 6);
+}
+
 /* Moví todos los estilos a su respectiva carpeta de componente */
