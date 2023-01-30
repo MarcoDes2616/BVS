@@ -7,6 +7,7 @@ import slider2 from "./assets/img/slider2.png"
 import slider3 from "./assets/img/slider3.png"
 import logo from "./assets/img/logo_big.png"
 
+
 function App() {
 
 
