@@ -12,7 +12,7 @@ const ParticlesEffect = () => {
 
     return (
         <>
-            <Particles
+            <Particles className='particles'
                 init={init} options={particlesconfig}
                 // options={{
                 //     fps_limit: 60,

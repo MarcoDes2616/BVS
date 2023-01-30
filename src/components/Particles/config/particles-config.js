@@ -1,10 +1,10 @@
 const particlesconfig = {
     "particles": {
       "number": {
-        "value": 60,
+        "value": 65,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 900
         }
       },
       "color": {
@@ -30,7 +30,7 @@ const particlesconfig = {
         "random": false,
         "anim": {
           "enable": false,
-          "speed": .1,
+          "speed": 1,
           "opacity_min": 0.1,
           "sync": false
         }
@@ -40,7 +40,7 @@ const particlesconfig = {
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 20,
+          "speed": 60,
           "size_min": 0.1,
           "sync": false
         }
@@ -54,7 +54,7 @@ const particlesconfig = {
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 2,
         "direction": "none",
         "random": false,
         "straight": false,
