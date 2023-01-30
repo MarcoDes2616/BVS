@@ -1,0 +1,93 @@
+.nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid var(--primary);
+    padding: .3rem 2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.logoHeader {
+    width: 230px;
+    cursor: pointer;
+}
+
+.logoHeader img {
+    width: 100%;
+}
+
+.menu {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu div {
+    overflow: hidden;
+    position: relative;
+}
+
+.menu img {
+    height: 100%;
+    position: absolute;
+    left: -70px;
+    z-index: 4;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primary);
+    height: 2rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    font-weight: 600;
+}
+
+.menu div:hover .destello {
+    animation: destello .7s 1 linear;
+}
+
+.social-media {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.social-media>a:hover{
+    transform: scale(1.1);
+}
+
+.social-media a {
+    background-color: var(--primary);
+    color: #000;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px white;
+}
+
+@keyframes destello {
+    0% {
+        left: -70px;
+    }
+
+    100% {
+        left: 70px;
+    }
+}

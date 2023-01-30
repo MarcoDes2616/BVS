@@ -2,8 +2,8 @@ import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import Typewriter from 'typewriter-effect';
-import Cards from './components/BusinessCard'
-import Navbar from './components/Navbar'
+import Cards from './components/BussniesCard/BusinessCard'
+import Navbar from './components/Navbar/Navbar'
 import slider1 from "./assets/img/slider1.png"
 import slider2 from "./assets/img/slider2.png"
 import slider3 from "./assets/img/slider3.png"
@@ -23,9 +23,9 @@ function App() {
 
     return (
         <div className="App">
+            <Navbar />
             <div className='presentation'>
-                <Navbar />
-                <div className="writter">
+                {/* <div className="writter">
                     <Typewriter
                         options={{
                             strings: textToShow,
@@ -99,7 +99,7 @@ function App() {
                     <img className='slider three' src={slider3} alt="" />
                     <img className='logo' src={logo} alt="" />
                 </div>
-                <Cards />
+                <Cards /> */}
             </div>
 
         </div>
