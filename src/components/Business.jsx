@@ -5,7 +5,7 @@ const Business = () => {
     return (
         <div className='business__container'>
             <div className='business b_one'>
-                <div className='business_circle'>
+                <div className='business_circle c_one'>
                     <div>
                         <img src={icon1} alt="" />
                     </div>
@@ -18,7 +18,7 @@ const Business = () => {
                 </div>
             </div>
             <div className='business b_two'>
-                <div className='business_circle'>
+                <div className='business_circle c_two'>
                     <div>
                         <img src={icon1} alt="" />
                     </div>
@@ -31,7 +31,7 @@ const Business = () => {
                 </div>
             </div>
             <div className='business b_three'>
-                <div className='business_circle'>
+                <div className='business_circle c_three'>
                     <div>
                         <img src={icon1} alt="" />
                     </div>
@@ -44,7 +44,7 @@ const Business = () => {
                 </div>
             </div>
             <div className='business b_four'>
-                <div className='business_circle'>
+                <div className='business_circle c_four'>
                     <div>
                         <img src={icon1} alt="" />
                     </div>
@@ -57,7 +57,7 @@ const Business = () => {
                 </div>
             </div>
             <div className='business b_five'>
-                <div className='business_circle'>
+                <div className='business_circle c_five'>
                     <div>
                         <img src={icon1} alt="" />
                     </div>
