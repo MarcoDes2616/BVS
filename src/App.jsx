@@ -1,6 +1,7 @@
 import { useCallback } from 'react';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import Typewriter from 'typewriter-effect';
 import Cards from './components/BusinessCard'
 import Navbar from './components/Navbar'
 import slider1 from "./assets/img/slider1.png"
@@ -13,6 +14,8 @@ import './App.css'
 
 
 function App() {
+    const textToShow = ['Somos la revolución de los servicios Tecnológicos', 'Mejore su rendimiento con nuestras asesorías personalizadas']
+
     const init = useCallback( async (engine) =>{
         await loadFull(engine);
     })
@@ -22,7 +25,15 @@ function App() {
         <div className="App">
             <div className='presentation'>
                 <Navbar />
-                {/* hola soy fredy */}
+                <div className="writter">
+                    <Typewriter
+                        options={{
+                            strings: textToShow,
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </div>
                 <Particles
                     id='particles'
                     init={ init }

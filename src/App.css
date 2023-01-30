@@ -299,3 +299,14 @@ nav{
     box-shadow: none;
 }
 
+.writter{
+    position: absolute;
+    top: 200px;
+    left: 17%;
+    text-align: center;
+    font-size: 2.5em;
+    color: #fff;
+    width: 80%;
+    height: 100px;
+    z-index: 20;
+}
