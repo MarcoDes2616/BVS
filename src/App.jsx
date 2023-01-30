@@ -44,6 +44,9 @@ function App() {
                             }
                         },
                         particles: {
+                            color: {
+                                value: '#43D682'
+                            },
                             links: {
                                 color: '#fff',
                                 distance: 150,
@@ -63,6 +66,9 @@ function App() {
                                 random: false,
                                 speed: 1,
                                 straight: false
+                            },
+                            opacity: {
+                                value: 0.1,
                             },
                             shape: {
                                 type: 'circle'
