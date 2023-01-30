@@ -175,7 +175,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(0 0 20px var(--light))
 }
 .business_circle{
     width: 100px;
@@ -192,19 +191,19 @@ nav{
 .b_one, .b_three, .b_five{
     align-self: flex-end;
 }
-.b_one{
+.c_one{
     animation: shadow 10s infinite 0s linear;
 }
-.b_two{
+.c_two{
     animation: shadow 10s infinite 2s linear;
 }
-.b_three{
+.c_three{
     animation: shadow 10s infinite 4s linear;
 }
-.b_four{
+.c_four{
     animation: shadow 10s infinite 6s linear;
 }
-.b_five{
+.c_five{
     animation: shadow 10s infinite 8s linear;
 }
 .business_circle div{
@@ -221,25 +220,32 @@ nav{
 }
 @keyframes shadow {
     0%{
-        filter: drop-shadow(0 0 20px var(--light));
+        box-shadow: 0 0 20px var(--light);
+        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
     25%{
-        filter: drop-shadow(0 0 20px var(--primar));
+        box-shadow: 0 0 20px var(--primary);
+        /* filter: drop-shadow(0 0 20px var(--primar)); */
     }
     40%{
-        filter: drop-shadow(0 0 20px var(--light));
+        box-shadow: 0 0 20px var(--light);
+        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
     55%{
-        filter: drop-shadow(0 0 20px var(--secondary));
+        box-shadow: 0 0 20px var(--secondary);
+        /* filter: drop-shadow(0 0 20px var(--secondary)); */
     }
     70%{
-        filter: drop-shadow(0 0 20px var(--light));
+        box-shadow: 0 0 20px var(--light);
+        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
     85%{
-        filter: drop-shadow(0 0 20px var(--success));
+        box-shadow: 0 0 20px var(--success);
+        /* filter: drop-shadow(0 0 20px var(--success)); */
     }
     100%{
-        filter: drop-shadow(0 0 20px var(--light));
+        box-shadow: 0 0 20px var(--light);
+        /* filter: drop-shadow(0 0 20px var(--light)); */
     } 
 }
 .business_rectangle{
