@@ -21,6 +21,7 @@ function App() {
         <div className="App">
             <div className='presentation'>
                 <Navbar />
+                {/* hola soy fredy */}
                 <Particles
                     id='particles'
                     init={ init }
