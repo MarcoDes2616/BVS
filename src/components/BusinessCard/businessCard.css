@@ -1,22 +1,121 @@
 .business__container {
     width: 100%;
-    height: 270px;
+    height: 40vh;
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
     z-index: 20;
     display: flex;
     justify-content: space-around;
     animation: business 1.5s linear;
 }
 @keyframes business {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
-.business{
+.call_play {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    height: 70px;
+    max-width: 400px;
+    align-items: center;
+    color: var(--primary);
+}
+.call_play .bx {
+    color: var(--light);
+    animation: playM 2s infinite linear;
+}
+.call_play p{
+    animation: discover 2s infinite linear;
+}
+.call_play:hover {
+    cursor: pointer;
+}
+.call_play:hover .bx-play-circle {
+    animation: none;
+}
+@keyframes playM {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes play {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        translate: 10px 0;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes discover {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        rotate: 0deg;
+        transform: scale(1);
+        color: var(--primary);
+    }
+
+    53% {
+        rotate: 0.5deg;
+    }
+
+    56% {
+        rotate: -0.5deg;
+    }
+
+    59% {
+        rotate: 0.5deg;
+    }
+
+    62% {
+        rotate: -0.5deg;
+        transform: scale(1.05);
+        color: var(--success);
+    }
+
+    65% {
+        rotate: 0.5deg;
+    }
+
+    68% {
+        rotate: -0.5deg;
+    }
+
+    71% {
+        rotate: 0deg;
+        transform: scale(1);
+        color: var(--primary);
+    }
+
+    100% {
+        /* color: var(--light); */
+    }
+}
+
+.business {
     display: flex;
     position: relative;
     justify-content: center;
@@ -33,7 +132,6 @@
 .business:nth-child(5) {
     align-self: flex-end;
 }
-
 
 .business> :nth-child(1) {
     animation: shadow 10s infinite 0s linear;
@@ -84,7 +182,7 @@
 
 .business:hover .business_circle {
     translate: -52px -52px;
-    /* animation: none; */
+    animation: none;
     box-shadow: none;
 }
 
@@ -104,13 +202,11 @@
     transition: opacity 1s linear;
 }
 
-
 .business:hover .business_rectangle {
     opacity: 1;
 }
 
-
-.business_info{
+.business_info {
     background: linear-gradient(135deg, rgb(7, 7, 7) 50%, rgb(217, 217, 218) 100%);
     width: 192px;
     height: 142px;
@@ -141,36 +237,51 @@
 @keyframes shadow {
     0% {
         box-shadow: 0 0 20px var(--light);
-        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
 
     25% {
         box-shadow: 0 0 20px var(--primary);
-        /* filter: drop-shadow(0 0 20px var(--primar)); */
     }
 
     40% {
         box-shadow: 0 0 20px var(--light);
-        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
 
     55% {
         box-shadow: 0 0 20px var(--secondary);
-        /* filter: drop-shadow(0 0 20px var(--secondary)); */
     }
 
     70% {
         box-shadow: 0 0 20px var(--light);
-        /* filter: drop-shadow(0 0 20px var(--light)); */
     }
 
     85% {
         box-shadow: 0 0 20px var(--success);
-        /* filter: drop-shadow(0 0 20px var(--success)); */
     }
 
     100% {
         box-shadow: 0 0 20px var(--light);
-        /* filter: drop-shadow(0 0 20px var(--light)); */
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .business__container {
+        height: 270px;
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+        animation: business 1.5s linear;
+    }
+    .call_play {
+        position: absolute;
+        flex-direction: row;
+        top: 0rem;
+        left: calc(50% - 180px);
+        font-size: 1.7rem;
+        gap: 1rem;
+    }
+    .call_play .bx {
+        animation: play 2s infinite linear;
     }
 }

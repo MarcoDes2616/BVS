@@ -6,36 +6,55 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 4.5rem;
+    height: 3.5rem;
     border-bottom: 1px solid var(--primary);
-    padding: .3rem 2rem;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 100;
+    padding: .3rem;
 }
 
 .logoHeader {
-    width: 230px;
+    width: 40%;
+    max-width: 230px;
     cursor: pointer;
 }
 
 .logoHeader img {
     width: 100%;
 }
-
-.menu {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
+.menu{
+    display: none;
 }
-
+.side-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(24, 23, 23, 0.9);
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5rem;
+    top: 4.5rem;
+    height: calc(100vh);
+}
+.side-menu div {
+    overflow: hidden;
+    position: relative;
+}
 .menu div {
     overflow: hidden;
     position: relative;
 }
-
+.side-menu img {
+    height: 100%;
+    position: absolute;
+    left: -70px;
+    z-index: 4;
+}
 .menu img {
     height: 100%;
     position: absolute;
@@ -43,6 +62,17 @@
     z-index: 4;
 }
 
+.side-menu a {
+    text-decoration: none;
+    color: var(--primary);
+    height: 2rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    font-weight: 600;
+}
 .menu a {
     text-decoration: none;
     color: var(--primary);
@@ -60,14 +90,15 @@
 }
 
 .social-media {
-    width: 200px;
+    width: 40%;
+    max-width: 160px;
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: space-evenly;
 }
 
-.social-media>a:hover{
+.social-media>a:hover {
     transform: scale(1.1);
 }
 
@@ -91,5 +122,26 @@
 
     100% {
         left: 70px;
+    }
+}
+
+.bx-menu-alt-right {
+    color: var(--primary);
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        padding: .3rem 2rem;
+        height: 4.5rem;
+    }
+    .menu {
+        display: flex;
+        width: 40%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .bx-menu-alt-right {
+        display: none;
     }
 }

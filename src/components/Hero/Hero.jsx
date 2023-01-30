@@ -7,6 +7,7 @@ import slider3 from "../../assets/img/slider3.png"
 import logo from "../../assets/img/logo_big.png"
 import { cardsData, textToShow } from '../../data';
 import './hero.css'
+import BusinessCard from '../../components/BusinessCard/BusinessCard';
 
 const Hero = () => {
 
@@ -34,7 +35,7 @@ const Hero = () => {
                     <i className='bx bx-play-circle bx-lg' ></i>
                     <p>Descubre mas de BVS</p>
                 </div>
-                <Cards data={cardsData} />
+                {/* <BusinessCard /> */}
             </div>
         </div>
     );
