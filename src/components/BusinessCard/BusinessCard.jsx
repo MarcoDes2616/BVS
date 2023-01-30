@@ -16,7 +16,7 @@ const Business = ({data}) => {
                     </div>
                 </div>
                 <div className='business_rectangle'>
-                    <div className='business_content'>
+                    <div className='business_info'>
                         <div className='cintillo'></div>
                         <h2>{card.title}</h2>
                         <p>

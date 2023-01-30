@@ -13,6 +13,8 @@ const ParticlesEffect = () => {
     return (
         <>
             <Particles className='particles'
+    // se creó una nueva configuración de las particulas en 
+    // particlesconfig que muestra una densidad menor de particulas
                 init={init} options={particlesconfig}
                 // options={{
                 //     fps_limit: 60,

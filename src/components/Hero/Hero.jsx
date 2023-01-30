@@ -14,6 +14,7 @@ const Hero = () => {
     return (
         <div className='hero'>
             <div className="writter">
+                <img className='logo' src={logo} alt="" />
                 <Typewriter
                     options={{
                         strings: textToShow,
@@ -27,10 +28,13 @@ const Hero = () => {
                 <img className='slider one' src={slider1} alt="" />
                 <img className='slider two' src={slider2} alt="" />
                 <img className='slider three' src={slider3} alt="" />
-                <img className='logo' src={logo} alt="" />
             </div>
             <div className='business__container'>
-                <Cards data={ cardsData }/>
+                <div className='call_play'>
+                    <i className='bx bx-play-circle bx-lg' ></i>
+                    <p>Descubre mas de BVS</p>
+                </div>
+                <Cards data={cardsData} />
             </div>
         </div>
     );
