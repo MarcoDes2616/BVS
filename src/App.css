@@ -8,6 +8,7 @@
     --dark: #000;
     --dark_sec: #1D4020;
 }
+/* Mi comentario */
 *{
     padding: 0;
     margin: 0;
@@ -206,6 +207,7 @@ nav{
 .c_five{
     animation: shadow 10s infinite 8s linear;
 }
+
 .business_circle div{
     background: linear-gradient(-45deg, rgb(7, 7, 7) 40%, rgb(252, 252, 254) 100%);
     width: 92px;
@@ -246,7 +248,7 @@ nav{
     100%{
         box-shadow: 0 0 20px var(--light);
         /* filter: drop-shadow(0 0 20px var(--light)); */
-    } 
+    }
 }
 .business_rectangle{
     width: 200px;
