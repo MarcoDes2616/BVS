@@ -8,6 +8,7 @@ import logo from "../../assets/img/logo_big.png"
 import { cardsData, textToShow } from '../../data';
 import './hero.css'
 import BusinessCard from '../../components/BusinessCard/BusinessCard';
+import scroll from "../../assets/img/scroll.gif"
 
 const Hero = () => {
 
@@ -35,7 +36,8 @@ const Hero = () => {
                     <i className='bx bx-play-circle bx-lg' ></i>
                     <p>Descubre mas de BVS</p>
                 </div>
-                {/* <BusinessCard /> */}
+                <img className='scroll' src={scroll} alt="" />
+                <BusinessCard />
             </div>
         </div>
     );

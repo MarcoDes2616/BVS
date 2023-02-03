@@ -91,7 +91,6 @@ const Business = ({ data }) => {
                         <div className='cintillo'></div>
                         <h2></h2>
                         <p>
-
                         </p>
                     </div>
                 </div>

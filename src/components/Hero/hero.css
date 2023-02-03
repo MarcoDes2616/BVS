@@ -16,18 +16,18 @@
     align-items: center;
 }
 .writter {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    font-size: 240%;
     color: #fff;
     width: 100%;
     max-width: 1000px;
     height: 55vh;
-    z-index: 20;
+    z-index: 1;
+    margin-top: 2rem;
 }
 .logo{
     width: 40%;
@@ -37,6 +37,7 @@
     animation: logo 1.5s 1 ease-out;
 }
 .Typewriter{
+    /* margin-top: 2rem; */
     width: 90%;
     max-width: 800px;
     height: 100px;
@@ -44,7 +45,8 @@
     line-height: 1.5rem;
 }
 .Typewriter span{
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
     background-clip: text;
     font-weight: 800;
     filter: drop-shadow(0 0 1px var(--light));
@@ -67,11 +69,9 @@
 .one {
     animation: slider 36s infinite 0s linear;
 }
-
 .two {
     animation: slider 36s infinite 12s linear;
 }
-
 .three {
     animation: slider 36s infinite 24s linear;
 }

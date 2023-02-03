@@ -1,6 +1,8 @@
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero';
 import './App.css'
+import SectionAds from './components/secciones/SectionAds';
+import SectionIA from './components/secciones/SectionIA';
 
 
 function App() {
@@ -12,13 +14,13 @@ function App() {
                 <Navbar />
                 <Hero />
             </div>
+            <div className='main'>
+                <SectionAds />
+                <SectionIA />
+            </div>
+            <footer>
 
-            <section className='hi'>
-                <h1>Hola soy una seccion</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam beatae doloribus, nostrum suscipit dignissimos nobis cum at nam reiciendis non aut quibusdam. Ab nesciunt nobis consequatur voluptas accusamus odit ipsum.
-                </p>
-            </section>
+            </footer>
         </div>
     )
 }

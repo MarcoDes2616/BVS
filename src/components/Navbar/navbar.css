@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     justify-content: space-between;
@@ -12,7 +12,6 @@
     z-index: 100;
     padding: .3rem;
 }
-
 .logoHeader {
     width: 40%;
     max-width: 230px;
@@ -113,6 +112,21 @@
     text-decoration: none;
     border-radius: 50%;
     box-shadow: 1px 1px 2px white;
+}
+.modal-open{
+    
+}
+.modal-open div{
+    border: 5px solid salmon;
+    background-color: #000;
+    color: aliceblue;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    max-width: 400px;
+    height: calc(100vh - 3.5rem);
+    z-index: 25;
 }
 
 @keyframes destello {
