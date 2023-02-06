@@ -11,6 +11,7 @@ const SectionIA = () => {
     return (
         <section className='media_section'>
             <img className='bg-1' src={bg1} alt="bg_section"/>
+            <img className='bg-2' src={bg2} alt="bg-2" />
             <div className="header_section">
                 <div>
                     <h2>Media With IA</h2>
@@ -26,7 +27,6 @@ const SectionIA = () => {
                 <p>¡Ya! es posible crear imágenes, videos y contenido de publicidad, con inteligencia artificial.</p>
             </div>
             <div className="media_box">
-                <img className='bg-2' src={bg2} alt="bg-2" />
                 <div className="main_content">
                     <div className="mediaImg_container">
                         <img src={makeIa} alt="IA_create" />
