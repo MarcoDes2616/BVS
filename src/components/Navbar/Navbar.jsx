@@ -64,7 +64,7 @@ const Navbar = () => {
                 </a>
             </div>
             <i onClick={() => setShow(!show)} className='bx bx-menu-alt-right bx-md'></i>
-            <MenuSide handleClose={handleClose} show={show} />
+            {/* <MenuSide handleClose={handleClose} show={show} /> */}
         </nav>
     )
 }

@@ -38,7 +38,7 @@ const SectionAds = () => {
                     <div className='video'>
                         <div className='relative_one'></div>
                         <div className='relative_two'></div>
-                        <iframe width="80%" height="80%" src="https://www.youtube-nocookie.com/embed/iEJsToUeZ48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        {/* <iframe width="80%" height="80%" src="https://www.youtube-nocookie.com/embed/iEJsToUeZ48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                     </div>
                     <p><i className='bx bx-radio-circle-marked bx-burst bx-md' ></i>“Alcanza a tu público ideal. Con nuestra segmentación avanzada, podrás llegar
                         a la audiencia que realmente importa para tu negocio, basada en factores
