@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { loadFull } from 'tsparticles';
 import Particles from 'react-tsparticles';
-import './particles.css'
+// import './particles.css'
 import particlesconfig from './config/particles-config';
 
 const ParticlesEffect = () => {

@@ -25,7 +25,7 @@ const Hero = () => {
                     }}
                 />
             </div>
-            <ParticlesEffect />
+            {/* <ParticlesEffect /> */}
             <div className='img_container'>
                 <img className='slider one' src={slider1} alt="" />
                 <img className='slider two' src={slider2} alt="" />

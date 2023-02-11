@@ -36,7 +36,7 @@
     background-color: var(--light);
     box-shadow: 0 0 10px var(--light);
     background-image: url("../../assets/img/fondo-sec1.png");
-    background-size: contain;
+    background-size: 60%;
     background-repeat: no-repeat;
     color: #000;
 }
